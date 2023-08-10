@@ -1,19 +1,39 @@
-.formulario{
+.formulario {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     margin: 80px 0;
 }
 
-.formulario form{
-    max-width: 80%;
+.formulario form {
+    max-width: 30%;
     background-color: #F7F7F7;
     border-radius: 20px;
     box-shadow: 7px 7px 15px rgba(0, 0, 0, 25%);
     padding: 8px 100px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
-.formulario h2{
+.formulario h2 {
     font-size: 32px;
     font-weight: 400;
     color: #212121;
+}
+
+/*? Estilos para pantallas de teléfono */
+@media ((max-width: 1023px)){
+    .formulario{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .formulario form {
+        max-width: 80%;
+        padding: 8px 40px;
+        margin-bottom: 30px;
+}
 }
